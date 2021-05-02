@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import optimized_pair
 from .forms import MacthForm
+from django.contrib import messages
 
 def index(request):
      return render(request, 'MatchBatch/home.html') 
@@ -23,8 +24,9 @@ def matchresult(request):
     return render(request,"MatchBatch/matchresult.html",{'match':match})  
 
 def edit(request, id):  
-    match = optimized_pair.objects.get(id=id)  
+    match = optimized_pair.objects.get(id=id)
     return render(request,'MatchBatch/edit.html', {'match':match})
+    
 
 def update(request, id):  
     match = optimized_pair.objects.get(id=id)  
