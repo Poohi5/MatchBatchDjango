@@ -2,7 +2,7 @@
 
 This repository is a webapplication built using Django framework to showcase CRUD operations. I have used **Postgresql** database, however one can use the default sqlite3 database by making changes in the setting,py file as follows
 
-* setting.py file
+* settings.py file
   ```sh
   DATABASES = {
     'default': {
