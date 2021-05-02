@@ -1,0 +1,19 @@
+asgiref==3.2.10
+Django==3.1.1
+django-crudbuilder==0.2.7
+django-tables2==2.3.4
+install==1.3.4
+psycopg2-binary==2.8.6
+pytz==2021.1
+six==1.15.0
+sqlparse==0.4.1
+(venv) (base) Prajaktas-MacBook-Pro-2:Tesla PrajaktaPatil$ pip freeze requirements.txt. 
+asgiref==3.2.10
+Django==3.1.1
+django-crudbuilder==0.2.7
+django-tables2==2.3.4
+install==1.3.4
+psycopg2-binary==2.8.6
+pytz==2021.1
+six==1.15.0
+sqlparse==0.4.1

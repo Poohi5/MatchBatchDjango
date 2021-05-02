@@ -1,0 +1,47 @@
+{% extends "MatchBatch/base.html" %}
+ 
+{% block title %}Add New Employee Records{% endblock title %}
+ 
+{% block content %}
+<div class="col-md-12">
+    <h4>Demand Planning</h4> 
+         
+ <form method="POST" class="post-form" action="/addnew">  
+   {% csrf_token %}  
+  <div class="container">  
+ <br>  
+  <div class="form-group row">  
+  <label class="col-sm-1 col-form-label"></label>  
+  <div class="col-sm-4">  
+  <h3>Enter Details</h3>  
+  </div>  
+   </div>  
+   
+   <!-- <div class="form-group row">  
+  <label class="col-sm-2 col-form-label">ID:</label>  
+  <div class="col-sm-4">  
+    {{ form.id }}  
+  </div>  
+   </div>   -->
+  <div class="form-group row">  
+  <label class="col-sm-2 col-form-label">VIN:</label>  
+  <div class="col-sm-4">  
+    {{ form.vin }}  
+  </div>  
+   </div>  
+  <div class="form-group row">  
+  <label class="col-sm-2 col-form-label">RN:</label>  
+  <div class="col-sm-4">  
+    {{ form.rn }}  
+  </div>  
+   </div>  
+  <div class="form-group row">  
+  <label class="col-sm-1 col-form-label"></label>  
+  <div class="col-sm-4">  
+  <button type="submit" class="btn btn-primary">Submit</button>  
+  </div>  
+   </div>  
+  </div>  
+ </form>  
+</div> 
+{% endblock content %} 
