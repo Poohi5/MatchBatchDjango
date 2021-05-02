@@ -9,7 +9,7 @@ This repository is a webapplication built using Django framework to showcase CRU
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'mydatabase',
     }
-}
+  }  
   ```
 
 <!-- Steps to run the application -->
