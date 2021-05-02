@@ -1,9 +1,16 @@
 # DjangoCaseStudy
 
+This repository is a webapplication built using Django framework to showcase CRUD operations. I have used **Postgresql** database, however one can use the default sqlite3 database by making changes in the setting,py file as follows
 
-
-
-
+* setting.py file
+  ```sh
+  DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
+}
+  ```
 
 <!-- Steps to run the application -->
 ## Step 1
@@ -24,6 +31,10 @@ Git clone this repository
 3. Change directory to teslasite, make sure you have manage.py file here.
    ```sh
    python manage.py runserver
+   ```
+4. Run the following command in browser to view the application
+   ```sh
+   http://127.0.0.1:8000/
    ```
 
    
