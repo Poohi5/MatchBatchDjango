@@ -33,10 +33,10 @@ def update(request, id):
     form = MacthForm(request.POST, instance = match)  
     if form.is_valid():  
         form.save()  
-        return redirect("/")  
+        return redirect('matchresult')  
     return render(request, 'MatchBatch/edit.html', {'match': match})
 
 def destroy(request, id):  
     match = optimized_pair.objects.get(id=id)  
     match.delete()  
-    return redirect("/")  
+    return redirect('matchresult')  
