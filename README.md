@@ -12,6 +12,27 @@ This repository is a webapplication built using Django framework to showcase CRU
   }  
   ```
 
+<!-- Steps to load the data into database -->
+
+1. Change directory to teslasite
+2. Run the following command to open django shell
+   ```sh
+   python manage.py shell
+   ```
+3. Import the model optimized_pair by running the following command
+  ``` sh
+  from MatchBatch.models import optimized_pair
+  ```
+4. Load csv data into model
+  ```sh
+  from MatchBatch.dataimport import load_csv_file
+  ```
+5. Run the following command next
+  ```
+  load_csv_file("q4.csv")
+  ```
+
+
 <!-- Steps to run the application -->
 ## Step 1
 
